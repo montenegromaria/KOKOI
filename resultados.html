@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário Kokoi</title>
+    <link rel="icon" href="_a0018392-c0dc-4835-8e9b-2c196f99979b-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="questionario.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="intro-message">Responda essas perguntas para te conhecermos melhor</h2>
+        
+        <div class="progress-bar" style="width: 20%;"></div>
+
+        <div class="step" id="step1">
+            <h1>Qual seu gênero?</h1>
+            <div class="error-message" style="display:none;">Escolha uma das opções abaixo</div>
+            <select required onchange="validateSelection(this)">
+                <option value="">Selecione...</option>
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+                <option value="outro">Outro</option>
+            </select>
+            <button type="button" class="btn" onclick="nextStep(2)">Enviar</button>
+        </div>
+
+        <div class="step" id="step2" style="display: none;">
+            <h1>Qual seu tipo de pele?</h1>
+            <div class="error-message" style="display:none;">Escolha uma das opções abaixo</div>
+            <select required onchange="validateSelection(this)">
+                <option value="">Selecione...</option>
+                <option value="oleosa">Oleosa</option>
+                <option value="seca">Seca</option>
+                <option value="mista">Mista</option>
+            </select>
+            <button type="button" class="btn" onclick="nextStep(3)">Enviar</button>
+        </div>
+
+        <div class="step" id="step3" style="display: none;">
+            <h1>Você costuma fazer skin care diariamente?</h1>
+            <div class="error-message" style="display:none;">Escolha uma das opções abaixo</div>
+            <select required onchange="validateSelection(this)">
+                <option value="">Selecione...</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+            <button type="button" class="btn" onclick="nextStep(4)">Enviar</button>
+        </div>
+
+        <div class="step" id="step4" style="display: none;">
+            <h1>Você já usa algum produto específico para skin care?</h1>
+            <textarea id="produtos-atual" name="produtos-atual" rows="4" placeholder="Se sim, liste os produtos." required></textarea>
+            <p class="hint">Exemplo: Hidratante Facial - Marca X</p>
+            <button type="button" class="btn" onclick="finishQuiz()">Enviar</button>
+        </div>
+    </div>
+
+    <script>
+        let currentStep = 1;
+        const totalSteps = 4; // Total de perguntas
+
+        function nextStep(step) {
+            if (validateCurrentStep(currentStep)) {
+                document.getElementById(`step${currentStep}`).style.display = 'none';
+                document.getElementById(`step${step}`).style.display = 'block';
+                currentStep = step;
+
+                // Atualiza a barra de progresso
+                const progress = (currentStep / totalSteps) * 100;
+                document.querySelector('.progress-bar').style.width = `${progress}%`;
+            }
+        }
+
+        function validateSelection(selectElement) {
+            const errorMessage = selectElement.previousElementSibling;
+            if (selectElement.value === "") {
+                errorMessage.style.display = 'block'; // Mostra a mensagem de erro
+            } else {
+                errorMessage.style.display = 'none'; // Esconde a mensagem de erro
+            }
+        }
+
+        function validateCurrentStep(step) {
+            const selectElement = document.querySelector(`#step${step} select`);
+            if (selectElement.value === "") {
+                validateSelection(selectElement);
+                return false; // Impede a mudança de etapa se a seleção não for válida
+            }
+            return true; // Permite a mudança de etapa se a seleção for válida
+        }
+
+        function finishQuiz() {
+            alert('Questionário finalizado!'); // Ação após finalizar
+            // Você pode redirecionar para outra página ou salvar as respostas aqui.
+        }
+    </script>
+</body>
+</html>

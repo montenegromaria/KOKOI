@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   
+   body {
+    font-family: Arial, sans-serif;
+    background: url(/fundo-azul-do-gradiente-de-luxo-abstrato-liso-azul-escuro-com-vinheta-preta-studio-banner_1258-63451.avif);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   }
+   
+   .container {
+    background-color: rgba(255, 255, 255, 0.9); /* Branco com leve transparência */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+   }
+   
+   h1 {
+    text-align: center;
+    color: #0277BD; /* Azul escuro */
+    margin-bottom: 10px;
+   }
+   
+   .tagline {
+    text-align: center;
+    color: #01579B; /* Azul marinho */
+    font-style: italic;
+    margin-bottom: 20px;
+   }
+   
+   .input-group {
+    margin-bottom: 15px;
+   }
+   
+   label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #0277BD; /* Azul escuro */
+   }
+   
+   input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #B0BEC5;
+    border-radius: 5px;
+    background-color: #E1F5FE; /* Azul muito claro */
+   }
+   
+   input:focus {
+    outline: none;
+    border-color: #0288D1; /* Azul intermediário */
+   }
+   
+   .btn {
+    width: 100%;
+    background-color: #0288D1; /* Azul intermediário */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+   }
+   
+   .btn:hover {
+    background-color: #03A9F4; /* Azul claro */
+    transform: scale(1.05);
+   }
+   
+   .btn:active {
+    background-color: #0288D1; /* Azul intermediário */
+    transform: scale(1);
+   }
+   
+   .login-link, .register-link {
+    text-align: center;
+    margin-top: 15px;
+   }
+   
+   .login-link a, .register-link a {
+    color: #0288D1;
+    text-decoration: none;
+   }
+   
+   .login-link a:hover, .register-link a:hover {
+    text-decoration: underline;
+   }
+   
+   /* Estilo para a logo */
+   .logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+   }
+   
+   .logo {
+    width: 150px; /* Define o tamanho médio */
+    height: 150px;
+    border-radius: 50%; /* Torna a imagem redonda */
+    object-fit: cover; /* Garante que a imagem se encaixe dentro do círculo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destacar */
+   }
+   
+   body {
+    font-family: Arial, sans-serif;
+    background: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), /* Transparência branca para suavizar a imagem */
+    url('_b4805a8a-ebac-4fbd-87b1-b29d433535de.jpeg'); /* Substitua com o caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   }
+   
+   

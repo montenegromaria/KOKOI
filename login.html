@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokoi - Login</title>
+    <link rel="icon" href="_a0018392-c0dc-4835-8e9b-2c196f99979b-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="_a0018392-c0dc-4835-8e9b-2c196f99979b-removebg-preview.png" alt="Logo Kokoi" class="logo">
+        </div>
+
+        <h1>Login - Kokoi</h1>
+        <form onsubmit="return login()">
+            <div class="input-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <button type="submit" class="btn">Entrar</button>
+        </form>
+        <p class="register-link">Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
+    </div>
+
+    <script>
+        function login() {
+            // Aqui você pode incluir lógica de autenticação real
+            alert("Login realizado com sucesso!"); // Exemplo de alerta
+            window.location.href = 'resultados.html'; // Redireciona para o questionário
+            return false; // Impede o envio do formulário
+        }
+    </script> 
+</body>
+</html>

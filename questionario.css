@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   body {
+    font-family: Arial, sans-serif;
+    background: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), /* Transparência branca para suavizar a imagem */
+    url('_b4805a8a-ebac-4fbd-87b1-b29d433535de.jpeg'); /* Substitua com o caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   }
+   
+   .container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Largura máxima */
+    text-align: center;
+   }
+   
+   h1 {
+    font-size: 24px;
+    color: #0277BD; /* Azul escuro */
+    margin-bottom: 20px;
+   }
+   
+   textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #B0BEC5;
+    background-color: #E1F5FE; /* Azul muito claro */
+   }
+   
+   textarea:focus, select:focus {
+    outline: none;
+    border-color: #0288D1; /* Azul intermediário */
+   }
+   
+   .btn {
+    width: 100%;
+    background-color: #0288D1; /* Azul intermediário */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+   }
+   
+   .btn:hover {
+    background-color: #03A9F4; /* Azul claro */
+    transform: scale(1.05);
+   }
+   
+   .btn:active {
+    background-color: #0288D1; /* Azul intermediário */
+    transform: scale(1);
+   }
+   
+   /* Barra de progresso */
+   .progress-bar {
+    height: 5px;
+    background-color: #0288D1; /* Azul intermediário */
+    margin-bottom: 20px;
+    border-radius: 25px;
+    transition: width 0.4s ease; /* Suaviza a animação da barra */
+   }
+   
+   .hint {
+    font-size: 12px;
+    color: #757575; /* Cinza para o texto */
+    margin-top: -10px;
+    margin-bottom: 20px;
+    text-align: left;
+   }
+   h2 {
+    font-size: 20px;
+    color: #0277BD; /* Azul escuro */
+    margin-bottom: 20px;
+   }
+   .intro-message {
+    font-size: 16px; /* Tamanho pequeno */
+    color: #0277BD; /* Azul do site */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 10px; /* Espaçamento inferior */
+   }
+   
+   .progress-bar {
+    height: 5px; /* Ajuste a altura da barra de progresso */
+    background-color: #0288D1; /* Azul intermediário */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    border-radius: 25px; /* Bordas arredondadas */
+    transition: width 0.3s ease; /* Animação suave ao mudar a largura */
+   }
+   .error-message {
+    background-color: rgba(255, 0, 0, 0.1); /* Fundo vermelho claro */
+    border: 1px solid #F44336; /* Borda vermelha */
+    border-radius: 5px; /* Cantos arredondados */
+    padding: 5px; /* Espaçamento interno menor */
+    margin-bottom: 5px; /* Espaçamento abaixo da mensagem */
+    font-size: 12px; /* Tamanho da fonte menor */
+    text-align: center; /* Centraliza o texto */
+    color: #F44336; /* Cor do texto vermelha */
+   }

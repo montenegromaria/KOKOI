@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokoi - Cadastro</title>
+    <link rel="icon" href="_a0018392-c0dc-4835-8e9b-2c196f99979b-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="_a0018392-c0dc-4835-8e9b-2c196f99979b-removebg-preview.png" alt="Logo Kokoi" class="logo">
+        </div>
+        
+        <h1>Cadastro - Kokoi</h1>
+        <p class="tagline">"Cuide da sua pele, ela é o reflexo do seu bem-estar."</p>
+        <form onsubmit="return cadastrar()">
+            <div class="input-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="input-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <div class="input-group">
+                <label for="confirmar_senha">Confirmar Senha:</label>
+                <input type="password" id="confirmar_senha" name="confirmar_senha" required>
+            </div>
+            <button type="submit" class="btn">Cadastrar</button>
+        </form>
+        <p class="login-link">Já possui cadastro? <a href="login.html">Clique aqui</a></p>
+    </div>
+
+    <script>
+        function cadastrar() {
+            // Aqui você pode incluir lógica de cadastro real
+            alert("Cadastro realizado com sucesso!"); // Exemplo de alerta
+            window.location.href = 'resultados.html'; // Redireciona para o questionário
+            return false; // Impede o envio do formulário
+        }
+    </script> 
+</body>
+</html>
